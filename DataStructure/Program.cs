@@ -1,5 +1,6 @@
 ﻿using DataStructure;
 using System;
+using DataStructure.UnorderedList;
 using System.Net.NetworkInformation;
 
 
@@ -12,9 +13,11 @@ namespace DataStructure
         static string OrderedFilePath = @"E:\BridgeGateProblems\DataStructure\DataStructure\OrderedList\OrderedList.txt";
         static void Main(string[] args)
         {
-            UnorderedlistOperation operation = new UnorderedlistOperation();
+            UnorderedListOperations operation = new UnorderedListOperations();
             operation.ReadFileAndPerformOperation(unOrderedFilePath);
 
+            OrderedListOperations operation2 = new OrderedListOperations();
+            operation2.ReadAndPerformOperation(OrderedFilePath);
         }
     }
 }
