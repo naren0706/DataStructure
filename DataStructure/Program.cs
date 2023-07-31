@@ -3,6 +3,7 @@ using System;
 using DataStructure.UnorderedList;
 using System.Net.NetworkInformation;
 using DataStructure.BalancedParanthesis;
+using DataStructure.BankingCashCounter;
 
 namespace DataStructure
 {
@@ -21,6 +22,9 @@ namespace DataStructure
 
             BalancedParanthesisOperation operation3 = new BalancedParanthesisOperation();
             operation3.ReadAndPerformOperation(BalanceParenthesisFilepath);
+
+            BankingOperations operations = new BankingOperations(10000);
+            operations.AddPersonsInQueue();
         }
     }
 }
